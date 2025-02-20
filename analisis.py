@@ -50,7 +50,7 @@ class Parser:
         
     # Comenzar analisis
     def parse(self):
-        while self.obtener_token_actual():
+        while self.obtener_token_actual() and self.obtener_token_actual()[1] != "}":
             self.funcion()
     
     # Analizar la funcion en base a la estructura
